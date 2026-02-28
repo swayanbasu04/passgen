@@ -1,5 +1,4 @@
 import tkinter as tk
-import pyperclip
 from tkinter import messagebox
 import string as s
 import secrets
@@ -61,9 +60,9 @@ generate_button = tk.Button(root, text="Generate", command=generate_password)
 generate_button.pack(pady=10)
 
 
- symbols = ["Include symbols?", "Include uppercase letters?"]
- checkboxes = {}
- for symbol in symbols:
+symbols = ["Include symbols?", "Include uppercase letters?"]
+checkboxes = {}
+for symbol in symbols:
      var = tk.BooleanVar()
      chk = tk.Checkbutton(root, text=symbol, variable=var)  # Fixed here
      chk.pack(anchor=tk.W)
@@ -81,8 +80,8 @@ uppercase_checkbox.pack(anchor=tk.W)
 output_text = tk.Text(root, height=10, width=50)
 output_text.pack(pady=10)
 
-clip_button= tk.Button(root, text="copy to clipboard")
-clip_button.pack(row=0, column=1, pady=5)
+clip_button= tk.Button(root, text="copy to clipboard", command=copy_clipboard)
+clip_button.pack(pady=5)
 
 root.mainloop()
 
