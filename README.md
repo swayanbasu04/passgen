@@ -1,15 +1,15 @@
- Passgen
+**Passgen**
 
 A lightweight, secure password generator built with Python and Tkinter.
 
-## 🔐 Features
+##  Features:
 
 - **Cryptographically Secure**: Uses Python's `secrets` module for secure random generation
 - **Customizable Length**: Generate passwords of any desired length
 - **Character Options**: Toggle symbols and uppercase letters
 - **Multiple Passwords**: Generates one primary password plus 5 alternatives
 - **Clipboard Integration**: One-click copy to clipboard
-- **Simple GUI**: Clean, intuitive interface built with Tkinter
+- **Simple GUI**: Clean, intuitive ## Features:
 
 ## 📋 Requirements
 
@@ -29,7 +29,7 @@ cd passgen
 python3 --version
 ```
 
-## 💻 Usage
+## Usage
 
 Run the application:
 ```bash
@@ -61,31 +61,3 @@ chmod +x passwordgenerator
 - Length: `16`
 - Options: Both symbols and uppercase enabled
 - Result: `aB3!xR9@mK7#pQ2$` (primary) + 5 alternatives
-
-## 🔒 Security
-
-- Uses `secrets` module instead of `random` for cryptographic security
-- No password storage or logging
-- Passwords are only kept in memory during the session
-
-## 📝 Notes
-
-- Clipboard functionality depends on your desktop environment
-- For headless/server environments, consider using without GUI
-- Generated passwords meet most security requirements when using all options
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-
-## 👤 Author
-
-**Nobuka72**
-- GitHub: [@Nobuka72](https://github.com/Nobuka72)
-
-## ⭐ Show Your Support
-
-Give a ⭐ if this project helped you!
